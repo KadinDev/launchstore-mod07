@@ -1,0 +1,10 @@
+{% extends 'layout.njk' %}
+
+<!-- Aqui importo a função criado com nunjucks e estou chamando ele de section (as) -->
+{% import "parts/section-products.njk" as section %}
+
+{% block content %}
+
+   {{ section.products('Últimos Produtos', 'container', products) }}
+
+{% endblock content %}
